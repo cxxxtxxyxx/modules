@@ -1,0 +1,26 @@
+{
+  "name": "@cxxxtxxyxx/utils",
+  "version": "1.0.2",
+  "description": "github@cxxxtxxyxx's utils",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-cxxxtxxyxx:cxxxtxxyxx/modules.git"
+  },
+  "keywords": [
+    "array",
+    "collection",
+    "data",
+    "math",
+    "set",
+    "timer",
+    "deepcopy",
+    ".etc"
+  ],
+  "author": "cxxxtxxyxx",
+  "license": "MIT"
+}
