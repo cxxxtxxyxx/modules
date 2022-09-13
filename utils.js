@@ -1,4 +1,4 @@
-export function deepCopy(obj) {
+function deepCopy(obj) {
   let copyObj;
   if (Array.isArray(obj)) {
     copyObj = [];
@@ -16,3 +16,5 @@ export function deepCopy(obj) {
 
   return copyObj;
 }
+
+export { deepCopy };

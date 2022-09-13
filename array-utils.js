@@ -1,4 +1,4 @@
-export function filter(arr, callback) {
+function filter(arr, callback) {
   res = [];
   for (item of arr) {
     callback(item) && res.push(item);
@@ -6,7 +6,7 @@ export function filter(arr, callback) {
   return res;
 }
 
-export const reduce = (arr, func, prev) => {
+const reduce = (arr, func, prev) => {
   if (arr.length === 0 && prev === undefined) {
     throw new Error('Array is empty!!');
   }

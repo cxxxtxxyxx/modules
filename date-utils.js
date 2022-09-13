@@ -1,6 +1,6 @@
-export const WEEKS = '일월화수목금토';
+const WEEKS = '일월화수목금토';
 
-export function calendar(year, month) {
+function calendar(year, month) {
   const newDate = new Date(year, month - 1, 1);
   const firstDate = new Date(
     newDate.getFullYear(),
@@ -40,3 +40,5 @@ export function calendar(year, month) {
     console.log();
   }
 }
+
+export { WEEKS, calendar };

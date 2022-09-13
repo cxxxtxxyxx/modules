@@ -1,3 +1,5 @@
+import { rand } from './math-utils.js';
+
 const tryDebounce = (callback, delay) => {
   let timer;
   return (...args) => {

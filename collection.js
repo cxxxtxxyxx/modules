@@ -49,14 +49,14 @@ class Collection {
   }
 }
 
-export class Stack extends Collection {
+class Stack extends Collection {
   print() {
     super.print((arr) =>
       console.log('stack >>\n', [...arr].reverse().join('\n'))
     );
   }
 }
-export class Queue extends Collection {
+class Queue extends Collection {
   enqueue(val) {
     super.push(val);
   }
@@ -68,7 +68,7 @@ export class Queue extends Collection {
   }
 }
 
-export class ArrayList extends Collection {
+class ArrayList extends Collection {
   static listToArray(obj) {
     let tmp = obj;
     const res = [];
@@ -84,5 +84,4 @@ export class ArrayList extends Collection {
   }
 }
 
-const alist = new ArrayList({ value: 1, rest: { value: 2 } });
-alist.print();
+export { Stack, Queue, ArrayList };
